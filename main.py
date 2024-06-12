@@ -50,9 +50,7 @@ def main():
 
     # Display the text items
     for text in text_items:
-        if st.button(text):
-            pyperclip.copy(text)
-            st.success(f"Data Copied To Clipboard!")
+        st.write(text)
 
 if __name__ == "__main__":
     main()
